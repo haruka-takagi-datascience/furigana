@@ -2,7 +2,7 @@
 
 In the Japanese language, there are three different forms of written language. Hiragana, Katakana and Kanji. The Kanji characters are a derivation of traditional Chinese characters, and over time they have become a writing system of their own. In Japanese writing, the three forms Hiragana, Katakana and Kanji all mix to express information in newspapers, books and posters. When studying Japanese, it is an initial hurdle for learners to be able to read these Kanji characters, as they have different readings depending on what other characters surround them. To help learners, furigana was invented, as a form to show the reading of the Kanji characters in Hiragana. An example is shown in the image below. 
 
-<img src="images/img_1.png">
+<img src="images/img_5.png">
 
 In this example the furigana/reading of 今日 is きょう:kyou. And the furigana/reading of 天気 is てんき:tennki.
 Already in the Japanese Morphological Analysis space, there are many packages that have the ability to convert sentences with Kanji characters into their readings. Some of these packages are MeCab, Jumanji, Pykakashi, and etc. 
@@ -31,4 +31,4 @@ Here is how you would load the dictionary into a new environment. And let's chec
 
 
 
-g
+
