@@ -18,10 +18,9 @@ However, there is no way to tell this with the furigana machines. And on top of 
 In this project I will be creating a special furigana machine that will be able to put these readings on any combination of characters individually. 
 For example, using this machine the program will be able to determine that 今日 is 今:きょ:kyo + 日:う:u. This will be useful to implement in Japanese learning textbooks or a new program that will help learners read any text. It will also be useful in data conversion & expansion involving dialogue transcripts, such as the "Corpus of Spontaneous Japanese" known as CSJ in the NLP space. The CSJ is a database containing a large collection of Japanese spoken language data and information for use in linguistic research. I believe most of the Automatic Speech Recognition technology using Japanese, such as Amazon Alexa of Google Home for Japanese use, is trainined off the CSJ and datasets similar to the CSJ. 
 
-Starting off this project we first need to build a dictionary of all the possible readings of every Kanji character. We will be using the Mojikiban Database (mji.00601.csv), this database is a downloadable dataset with its main use in keyboard language conversion. This dataset helps people type japanese characters in, and is constantly being updated with the newest characters that are being used at the time. However, this dataset is very large and has alot of data that we do not need. I have cleaned the Mojikiban dataset to create a Yomi(character reading) dictionary by running the script yomi_dictionary_create.ipynb.
-This script creates the output yomi_dictionary_no_okurigana.pkl which allows us to save the dictionary and load it into other scripts. 
+Starting off this project we first need to build a dictionary of all the possible readings of every Kanji character. We will be using the Mojikiban Database (mji.00601.csv), this database is a downloadable dataset with its main use in keyboard language conversion. This dataset helps people type japanese characters in, and is constantly being updated with the newest characters that are being used at the time. However, this dataset is very large and has alot of data that we do not need. I have cleaned the Mojikiban dataset to create a Yomi(character reading) dictionary by running the script yomi_dictionary_create.ipynb. This script creates the output yomi_dictionary_no_okurigana.pkl which allows us to save the dictionary and load it into other scripts. 
 
-Please have a look at the github repository for this project to download the dictionary and look at the code use to create it. 
+[Please have a look at the github repository for this project to download the dictionary and look at the code use to create it.](https://github.com/haruka-takagi-datascience/text_processing)
 
 Here is an example output from the dictionary. The input is the character in question and the output is the list of all possible readings of that character. 
 <img src="images/img_2.png">
@@ -31,7 +30,7 @@ Here is how you would load the dictionary into a new environment. And let's chec
 
 We will use the following packages for the furigana machine; sudachipy, pandas, re, pickle and romkan
 
-We have 3 helper functions for the machine. To have a look at the full script please check furigana_machine.ipynb on my github repository.
+We have 3 helper functions for the machine. [To have a look at the full script please check furigana_machine.ipynb on my github repository.](https://github.com/haruka-takagi-datascience/text_processing/blob/main/furigana_machine.ipynb)
 
 1. is_hiragana(text): Function takes in a string of text and returns True if all the characters in the string are hiragana, and false otherwise.
 2. sudachi_kana_convert(text): Function that takes in a string of text and returns the katakana reading form of the string. For example, if the text is 道路が閉まっている, the function will return ドウロガシマッテイル.
