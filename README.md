@@ -29,6 +29,22 @@ Here is an example output from the dictionary. The input is the character in que
 Here is how you would load the dictionary into a new environment. And let's check if the dictionary is properly loaded.
 <img src="images/img_3.png">
 
+We will use the following packages for the furigana machine; sudachipy, pandas, re, pickle and romkan
 
+We have 3 helper functions for the machine. To have a look at the full script please check furigana_machine.ipynb on my github repository.
 
+1. is_hiragana(text): Function takes in a string of text and returns True if all the characters in the string are hiragana, and false otherwise.
+2. sudachi_kana_convert(text): Function that takes in a string of text and returns the katakana reading form of the string. For example, if the text is 道路が閉まっている, the function will return ドウロガシマッテイル.
+3. chouon_convert_token_new(kanji_token, katakana_token): Function that takes in the kanji token and the katakana token. And returns a list of furigana for each kanji character in the kanji token as a list of strings. For example, if the kanji_token is 道路 and the katakana_token is ドウロ. The function returns ['どう','ろ'].
+Another example, if the kanji_token is 閉まっ and the katakana_token is シマッ. The function returns ['し'].
 
+The main function is furigana_machine. Seen below.
+<img src="images/img_4.png">
+
+This function takes in text and outputs a string of text with the furigana in brackets.
+For example, if the text is 道路が閉まっている then the output is 道路(どうろ)が閉(し)まっている.
+
+Here are some more examples below.
+<img src="images/img_6.png">
+
+This concludes the furigana machine! I will be using this machine for my text transformation project, so head over to that project if you are curious of more implementations of this machine! Thank you for reading!
