@@ -26,7 +26,8 @@ Please have a look at the github repository for this project to download the dic
 Here is an example output from the dictionary. The input is the character in question and the output is the list of all possible readings of that character. 
 <img src="images/img_2.png">
 
-
+Here is how you would load the dictionary into a new environment. And let's check if the dictionary is properly loaded.
+<img src="images/img_3.png">
 
 
 
