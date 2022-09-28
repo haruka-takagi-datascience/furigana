@@ -16,7 +16,7 @@ For example, using the example above, 今日 = きょう:kyou, a native Japanese
 However, there is no way to tell this with the furigana machines. And on top of this the character 天 has more than one possible reading when alone, the possible readings for 天 are てん, あめ, あま, そら = ten, ame, ama, sora. This is the case for most Kanji characters, most of them have more than one readings and many have up to 4 possible readings. 
 
 In this project I will be creating a special furigana machine that will be able to put these readings on any combination of characters individually. 
-For example, using this machine the program will be able to determine that 今日 is 今:きょ:kyo + 日:う:u. This will be useful to implement in Japanese learning textbooks or a new program that will help learners read any text. It will also be useful in data conversion & expansion involving dialogue transcripts, such as the "Corpus of Spontaneous Japanese" known as CSJ in the NLP space. The CSJ is a database containing a large collection of Japanese spoken language data and information for use in linguistic research. I believe most of the Automatic Speech Recognition technology using Japanese, such as Amazon Alexa of Google Home for Japanese use, is trainined off the CSJ and datasets similar to the CSJ. 
+For example, using this machine the program will be able to determine that 今日 is 今:きょ:kyo + 日:う:u. This will be useful to implement in Japanese learning textbooks or a new program that will help learners read any text. 
 
 Starting off this project we first need to build a dictionary of all the possible readings of every Kanji character. We will be using the Mojikiban Database (mji.00601.csv), this database is a downloadable dataset with its main use in keyboard language conversion. This dataset helps people type japanese characters in, and is constantly being updated with the newest characters that are being used at the time. However, this dataset is very large and has alot of data that we do not need. I have cleaned the Mojikiban dataset to create a Yomi(character reading) dictionary by running the script yomi_dictionary_create.ipynb. This script creates the output yomi_dictionary_no_okurigana.pkl which allows us to save the dictionary and load it into other scripts. 
 
@@ -46,4 +46,4 @@ For example, if the text is 道路が閉まっている then the output is 道�
 Here are some more examples below.
 <img src="images/img_6.png">
 
-This concludes the furigana machine! I will be using this machine for my text transformation project, so head over to that project if you are curious of more implementations of this machine! Thank you for reading!
+This concludes the furigana machine! Thank you for reading!
