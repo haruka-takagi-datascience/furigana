@@ -37,13 +37,13 @@ We have 3 helper functions for the machine. [To have a look at the full script p
 3. chouon_convert_token_new(kanji_token, katakana_token): Function that takes in the kanji token and the katakana token. And returns a list of furigana for each kanji character in the kanji token as a list of strings. For example, if the kanji_token is 道路 and the katakana_token is ドウロ. The function returns ['どう','ろ'].
 Another example, if the kanji_token is 閉まっ and the katakana_token is シマッ. The function returns ['し'].
 
-The main function is furigana_machine. Seen below.
-<img src="images/img_4.png">
+The main function is furigana_machine. Seen below. <br />
+<img src="images/img_4.png" width="80%" height="80%">
 
 This function takes in text and outputs a string of text with the furigana in brackets.
 For example, if the text is 道路が閉まっている then the output is 道路(どうろ)が閉(し)まっている.
 
-Here are some more examples below.
-<img src="images/img_6.png">
+Here are some more examples below. <br />
+<img src="images/img_6.png" width="80%" height="80%">
 
 This concludes the furigana machine! Thank you for reading!
