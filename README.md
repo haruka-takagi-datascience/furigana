@@ -26,7 +26,7 @@ Here is an example output from the dictionary. The input is the character in que
 <img src="images/img_2.png" width="70%" height="70%">
 
 Here is how you would load the dictionary into a new environment. And let's check if the dictionary is properly loaded. <br />
-<img src="images/img_3.png" width="80%" height="80%">
+<img src="images/img_3.png" width="100%" height="100%">
 
 We will use the following packages for the furigana machine; sudachipy, pandas, re, pickle and romkan
 
