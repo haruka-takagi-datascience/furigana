@@ -23,10 +23,10 @@ Starting off this project we first need to build a dictionary of all the possibl
 [Please have a look at the github repository for this project to download the dictionary and look at the code use to create it.](https://github.com/haruka-takagi-datascience/text_processing)
 
 Here is an example output from the dictionary. The input is the character in question and the output is the list of all possible readings of that character. 
-<img src="images/img_2.png">
+<img src="images/img_2.png" width="40%" height="40%">
 
 Here is how you would load the dictionary into a new environment. And let's check if the dictionary is properly loaded.
-<img src="images/img_3.png">
+<img src="images/img_3.png" width="60%" height="60%">
 
 We will use the following packages for the furigana machine; sudachipy, pandas, re, pickle and romkan
 
